@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="program_page_title">Programa del Evento - Premios Liga Con Nós</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .program-highlights {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .highlight-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-top: 4px solid #61c0db;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .highlight-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .highlight-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .highlight-text {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .important-info {
+            background: linear-gradient(135deg, #61c0db, #4fa9c4);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .important-info h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .info-card {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .info-card h3 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .info-card p {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .registration-section {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .event-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .detail-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 4px solid #61c0db;
+        }
+        
+        .detail-card h4 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .detail-card p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->   
+    <header class="header nav">
+        <div class="container">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <select id="languageSelect" class="language-select">
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="gl">🏴󠁥󠁳󠁧󠁡󠁿 Galego</option>
+                    <option value="en">🇬🇧 English</option>
+                </select>
+            </div>
+            
+            <h1 class="main-title" data-translate="title">Premios Liga Con Nós</h1>
+            <h3 class="section-title" data-translate="subtitle">Premios bianuales que dan visibilidad a las patologías reumáticas</h3>
+            <nav class="nav">
+                <a href="../index.html" class="nav-btn" data-translate="nav_home">INICIO</a>
+                <a href="../paginas/programa.html" class="nav-btn active" data-translate="nav_program">PROGRAMA DEL EVENTO</a>
+                <a href="../paginas/contacto.html" class="nav-btn" data-translate="nav_contact">CONTACTO</a>
+                <a href="../paginas/historico.html" class="nav-btn" data-translate="nav_history">HISTÓRICO PREMIOS</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Program Header -->
+    <section class="welcome">
+        <div class="container">
+            <h2 class="section-title" data-translate="program_page_title">Programa del Evento</h2>
+            <p class="welcome-text" data-translate="program_page_intro">
+                La ceremonia de entrega de los Premios Liga Con Nós 2026 tendrá lugar el <strong>9 de noviembre</strong> 
+                en el Palacio de la Ópera de A Coruña. Te invitamos a conocer el programa completo de actividades 
+                que hemos preparado para esta ocasión especial.
+            </p>
+        </div>
+    </section>
+
+    <!-- Timeline Program -->
+    <section class="award-winners">
+        <div class="container">
+            <h2 class="section-title" data-translate="schedule_title">Cronograma de Actividades</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">🕕 17:30 - 18:15</div>
+                        <div class="timeline-title">Recepción y Registro</div>
+                        <div class="timeline-description">
+                            Bienvenida a todos los asistentes, registro de invitados y entrega de materiales del evento.
+                        </div>
+                        <div class="timeline-details">
+                            <strong>Ubicación:</strong> Hall principal del Palacio de la Ópera<br>
+                            <strong>Actividades:</strong> Networking informal, exhibición fotográfica de premiados anteriores
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">🕕 18:15 - 18:30</div>
+                        <div class="timeline-title">Apertura y Bienvenida</div>
+                        <div class="timeline-description">
+                            Palabras de apertura por parte de los organizadores y autoridades locales.
+                        </div>
+                        <div class="timeline-details">
+                            <strong>Presentan:</strong> Presidencia de la Liga Reumatológica Galega<br>
+                            <strong>Invitados especiales:</strong> Autoridades sanitarias y representantes institucionales
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">🕕 18:30 - 19:00</div>
+                        <div class="timeline-title">Mesa Redonda: "Avances en Reumatología"</div>
+                        <div class="timeline-description">
+                            Panel de expertos discutiendo los últimos avances en el tratamiento y diagnóstico de enfermedades reumáticas.
+                        </div>
+                        <div class="timeline-details">
+                            <strong>Moderador:</strong> Dr. Jenaro Graña, Reumatólogo<br>
+                            <strong>Panelistas:</strong> Profesionales médicos e investigadores destacados
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">🕕 19:00 - 19:45</div>
+                        <div class="timeline-title">Ceremonia de Entrega de Premios</div>
+                        <div class="timeline-description">
+                            Momento central del evento: entrega de los Premios Liga Con Nós 2024 a los galardonados.
+                        </div>
+                        <div class="timeline-details">
+                            <strong>Presentación:</strong> Biografías y logros de cada premiado<br>
+                            <strong>Entrega:</strong> Autoridades y representantes de instituciones colaboradoras<br>
+                            <strong>Fotografía oficial:</strong> Sesión fotográfica con todos los premiados
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">🕕 19:45 - 20:00</div>
+                        <div class="timeline-title">Palabras de Agradecimiento</div>
+                        <div class="timeline-description">
+                            Discurso de clausura y agradecimientos a colaboradores, patrocinadores y asistentes.
+                        </div>
+                        <div class="timeline-details">
+                            <strong>Intervenciones:</strong> Representante de premiados y Presidencia de la LRG<br>
+                            <strong>Reconocimientos:</strong> A patrocinadores y entidades colaboradoras
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">🕕 20:00 - 21:00</div>
+                        <div class="timeline-title">Cóctel de Clausura</div>
+                        <div class="timeline-description">
+                            Tiempo para el networking, intercambio de experiencias y celebración entre todos los asistentes.
+                        </div>
+                        <div class="timeline-details">
+                            <strong>Ubicación:</strong> Salones del Palacio de la Ópera<br>
+                            <strong>Servicio:</strong> Cóctel con productos gastronómicos locales<br>
+                            <strong>Oportunidad:</strong> Networking y conversación informal con premiados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Highlights -->
+    <section class="program-highlights">
+        <div class="container">
+            <h2 class="section-title">Destacados del Programa</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <span class="highlight-icon">🏆</span>
+                    <h3 class="highlight-title">Premiados Excepcionales</h3>
+                    <p class="highlight-text">
+                        Reconocimiento a profesionales, organizaciones y personas que han contribuido 
+                        significativamente a la visibilidad y tratamiento de las enfermedades reumáticas.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <span class="highlight-icon">👥</span>
+                    <h3 class="highlight-title">Mesa de Expertos</h3>
+                    <p class="highlight-text">
+                        Panel de discusión con reconocidos especialistas que compartirán los últimos 
+                        avances en investigación y tratamiento de patologías reumáticas.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <span class="highlight-icon">🤝</span>
+                    <h3 class="highlight-title">Networking Profesional</h3>
+                    <p class="highlight-text">
+                        Oportunidades únicas para establecer contactos con profesionales del sector, 
+                        investigadores, pacientes y representantes institucionales.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <span class="highlight-icon">📸</span>
+                    <h3 class="highlight-title">Cobertura Mediática</h3>
+                    <p class="highlight-text">
+                        El evento contará con cobertura de medios especializados y locales, 
+                        amplificando el mensaje de concienciación sobre las enfermedades reumáticas.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <span class="highlight-icon">🎭</span>
+                    <h3 class="highlight-title">Ubicación Emblemática</h3>
+                    <p class="highlight-text">
+                        El Palacio de la Ópera de A Coruña proporciona un marco incomparable 
+                        para esta celebración de la excelencia en el ámbito reumático.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <span class="highlight-icon">🍽️</span>
+                    <h3 class="highlight-title">Gastronomía Gallega</h3>
+                    <p class="highlight-text">
+                        El cóctel de clausura incluirá una selección de productos gastronómicos 
+                        típicos de Galicia, celebrando también nuestra cultura local.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Information -->
+    <section class="important-info">
+        <div class="container">
+            <h2>Información Importante para Asistentes</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🎫 Inscripción</h3>
+                    <p>
+                        El evento es gratuito pero requiere inscripción previa. Las plazas son limitadas. 
+                        Regístrate a través del formulario de contacto antes del 5 de noviembre.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>👔 Código de Vestimenta</h3>
+                    <p>
+                        Se recomienda vestimenta formal o semi-formal. El evento tiene un carácter solemne 
+                        de reconocimiento profesional.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🅿️ Aparcamiento</h3>
+                    <p>
+                        Aparcamiento limitado en los alrededores del Palacio de la Ópera. 
+                        Se recomienda el uso de transporte público o llegar con antelación.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>♿ Accesibilidad</h3>
+                    <p>
+                        El Palacio de la Ópera cuenta con instalaciones accesibles. 
+                        Si requiere asistencia especial, indíquelo en la inscripción.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📱 Conectividad</h3>
+                    <p>
+                        WiFi gratuito disponible. Se animará a compartir en redes sociales 
+                        usando el hashtag #PremiosLigaConNos2024.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🍫 Consideraciones Alimentarias</h3>
+                    <p>
+                        El cóctel incluye opciones para diferentes restricciones alimentarias. 
+                        Indique sus necesidades específicas al inscribirse.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <h2 class="section-title">Inscripción al Evento</h2>
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h3 style="color: #61c0db; font-size: 2rem; margin-bottom: 20px; font-weight: 300;">Formulario de Inscripción</h3>
+                    <p class="contact-intro">
+                        Para asistir a los Premios Liga Con Nós 2024, complete el siguiente formulario. 
+                        Recibirá confirmación por email con todos los detalles.
+                    </p>
+                    <form class="contact-form" id="registrationForm">
+                        <div class="form-group">
+                            <label for="name" data-translate="form_name_full">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="form_email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="form_phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization" data-translate="form_organization">Organización</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="attendees">Número de acompañantes</label>
+                            <select id="attendees" name="attendees" style="padding: 12px; border: 2px solid #ddd; border-radius: 4px;">
+                                <option value="0">Solo yo</option>
+                                <option value="1">1 acompañante</option>
+                                <option value="2">2 acompañantes</option>
+                                <option value="3">3 acompañantes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dietary">Restricciones alimentarias</label>
+                            <textarea id="dietary" name="dietary" rows="2" placeholder="Indique cualquier alergia o restricción alimentaria"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="accessibility">Necesidades especiales de accesibilidad</label>
+                            <textarea id="accessibility" name="accessibility" rows="2" placeholder="Describa cualquier asistencia que requiera"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Inscribirse al Evento</button>
+                    </form>
+                </div>
+                
+                <div class="location-container">
+                    <h3 style="color: #61c0db; font-size: 2rem; margin-bottom: 20px; font-weight: 300;">Detalles del Evento</h3>
+                    
+                    <div class="event-details-grid">
+                        <div class="detail-card">
+                            <h4>📅 Fecha y Hora</h4>
+                            <p data-translate="event_date">
+                                <strong>9 de noviembre de 2024</strong><br>
+                                17:30 - 21:00 horas
+                            </p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h4>📍 Ubicación</h4>
+                            <p data-translate="event_location">
+                                <strong>Palacio de la Ópera</strong><br>
+                                Glorieta América, S/n<br>
+                                15004 A Coruña, Galicia
+                            </p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h4>🎫 Inscripción</h4>
+                            <p>
+                                <strong>Gratuito con inscripción previa</strong><br>
+                                Plazas limitadas<br>
+                                Fecha límite: 5 de noviembre
+                            </p>
+                        </div>
+                        
+                        <div class="detail-card" style="grid-column: 1 / -1;">
+                            <h4>📝 Nota Importante</h4>
+                            <p>
+                                Recibirá un email de confirmación con el programa detallado 
+                                y las instrucciones de acceso al Palacio de la Ópera.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../imagenes/Aniversario 25 Liga Reumatolóxica.png" alt="25 Aniversario Liga Reumatolóxica">
+                </div>
+                <div class="footer-text">
+                    <p>&copy;
+                        <span id="copyright"></span> - <span data-translate="footer_text">Premios Liga Con Nós</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../translations.js"></script>
+    <script src="../script.js"></script>

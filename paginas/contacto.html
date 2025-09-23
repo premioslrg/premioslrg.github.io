@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="contact_page_title">Contacto - Premios Liga Con Nós</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Header -->   
+    <header class="header nav">
+        <div class="container">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <select id="languageSelect" class="language-select">
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="gl">🏴󠁥󠁳󠁧󠁡󠁿 Galego</option>
+                    <option value="en">🇬🇧 English</option>
+                </select>
+            </div>
+            
+            <h1 class="main-title" data-translate="title">Premios Liga Con Nós</h1>
+            <h3 class="section-title" data-translate="subtitle">Premios bianuales que dan visibilidad a las patologías reumáticas</h3>
+            <nav class="nav">
+                <a href="../index.html" class="nav-btn" data-translate="nav_home">INICIO</a>
+                <a href="../paginas/programa.html" class="nav-btn" data-translate="nav_program">PROGRAMA DEL EVENTO</a>
+                <a href="../paginas/contacto.html" class="nav-btn active" data-translate="nav_contact">CONTACTO</a>
+                <a href="../paginas/historico.html" class="nav-btn" data-translate="nav_history">HISTÓRICO PREMIOS</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Header Section -->
+    <section class="welcome">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_page_title">Contacto</h2>
+            <p class="welcome-text" data-translate="contact_page_intro">
+                ¿Tienes alguna pregunta sobre los Premios Liga Con Nós? ¿Necesitas más información sobre el evento? 
+                Estamos aquí para ayudarte. No dudes en contactarnos a través de cualquiera de los medios disponibles.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="blue-section">
+        <div class="container">
+            <div class="blue-content">
+                <div class="blue-text">
+                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 30px;" data-translate="contact_info_title">Información de Contacto</h3>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_email_title">📧 Correo Electrónico</h4>
+                        <p><a href="mailto:info@ligareumatoloxicagalega.es" style="color: white; text-decoration: underline;">info@ligareumatoloxicagalega.es</a></p>
+                        <p><a href="mailto:premios@ligareumatoloxicagalega.es" style="color: white; text-decoration: underline;">premios@ligareumatoloxicagalega.es</a></p>
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_phone_title">📞 Teléfono</h4>
+                        <p>+34 981 123 456</p>
+                        <p>+34 689 123 456 (WhatsApp)</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_address_title">📍 Dirección</h4>
+                        <p>Liga Reumatológica Galega</p>
+                        <p>Calle Ejemplo, 123</p>
+                        <p>15001 A Coruña, Galicia</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_hours_title">🕒 Horario de Atención</h4>
+                        <p data-translate="contact_hours_weekdays">Lunes a Viernes: 9:00 - 17:00</p>
+                        <p data-translate="contact_hours_saturday">Sábados: 9:00 - 13:00</p>
+                        <p data-translate="contact_hours_sunday">Domingos: Cerrado</p>
+                    </div>
+                </div>
+                <div class="blue-image">
+                    <div class="image-container">
+                        <img src="../imagenes/logo_lrg.png" alt="Liga Reumatológica Galega">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 style="color: #61c0db; font-size: 2rem; margin-bottom: 20px; font-weight: 300;" data-translate="contact_form_title">Envíanos un mensaje</h3>
+                    <p class="contact-intro" data-translate="contact_intro">
+                        Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible. 
+                        Todos los campos marcados con (*) son obligatorios.
+                    </p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-translate="form_name_full">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="form_email">Dirección de correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="form_phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-translate="form_subject">Asunto *</label>
+                            <select id="subject" name="subject" required style="padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                                <option value="" data-translate="form_subject_select">Selecciona un asunto</option>
+                                <option value="informacion-general" data-translate="form_subject_general">Información general</option>
+                                <option value="inscripcion-evento" data-translate="form_subject_registration">Inscripción al evento</option>
+                                <option value="prensa" data-translate="form_subject_press">Consultas de prensa</option>
+                                <option value="patrocinio" data-translate="form_subject_sponsorship">Oportunidades de patrocinio</option>
+                                <option value="nominaciones" data-translate="form_subject_nominations">Nominaciones para premios</option>
+                                <option value="otros" data-translate="form_subject_others">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization" data-translate="form_organization">Organización/Empresa</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="form_message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group" style="flex-direction: row; align-items: center; gap: 10px;">
+                            <input type="checkbox" id="privacy" name="privacy" required style="width: auto; margin: 0;">
+                            <label for="privacy" style="margin: 0; font-size: 0.9rem;" data-translate="form_privacy">
+                                Acepto la política de privacidad y el tratamiento de mis datos *
+                            </label>
+                        </div>
+                        <button type="submit" class="submit-btn" data-translate="form_submit_extended">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="location-container">
+                    <h3 style="color: #61c0db; font-size: 2rem; margin-bottom: 20px; font-weight: 300;" data-translate="contact_help_title">¿Cómo podemos ayudarte?</h3>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: #333; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_help_event">📋 Información sobre el evento</h4>
+                        <p style="color: #666; line-height: 1.6;" data-translate="contact_help_event_desc">
+                            Consultas sobre el programa, horarios, ubicación, inscripciones y cualquier aspecto relacionado con la ceremonia de premios.
+                        </p>
+                    </div>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: #333; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_help_nominations">🏆 Nominaciones</h4>
+                        <p style="color: #666; line-height: 1.6;" data-translate="contact_help_nominations_desc">
+                            Si conoces a alguien que debería ser reconocido por su labor en el ámbito de las enfermedades reumáticas, contáctanos.
+                        </p>
+                    </div>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: #333; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_help_press">📰 Prensa y medios</h4>
+                        <p style="color: #666; line-height: 1.6;" data-translate="contact_help_press_desc">
+                            Solicitudes de entrevistas, notas de prensa, acreditaciones y material gráfico para medios de comunicación.
+                        </p>
+                    </div>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: #333; font-size: 1.2rem; margin-bottom: 10px;" data-translate="contact_help_collaborations">🤝 Colaboraciones</h4>
+                        <p style="color: #666; line-height: 1.6;" data-translate="contact_help_collaborations_desc">
+                            Oportunidades de patrocinio, colaboración institucional y alianzas estratégicas con organizaciones afines.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #61c0db;">
+                        <h4 style="color: #333; margin-bottom: 10px;" data-translate="contact_tip_title">💡 Consejo</h4>
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;" data-translate="contact_tip_desc">
+                            Para una respuesta más rápida, incluye todos los detalles relevantes en tu mensaje inicial. 
+                            Te responderemos en un plazo máximo de 48 horas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../imagenes/Aniversario 25 Liga Reumatolóxica.png" alt="25 Aniversario Liga Reumatolóxica">
+                </div>
+                <div class="footer-text">
+                    <p>&copy;
+                        <span id="copyright"></span> - <span data-translate="footer_text">Premios Liga Con Nós</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../translations.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
