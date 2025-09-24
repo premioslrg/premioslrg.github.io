@@ -6,8 +6,64 @@
     <title data-translate="title">Premios Liga Con Nós</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+<style>
+    /* Estilos del banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      display: none;
+      z-index: 9999;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    }
+    #cookie-banner button {
+      margin-left: 15px;
+      background: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    #cookie-banner button:hover {
+      background: #45a049;
+    }
+  </style>
 </head>
 <body>
+    <!-- Banner de cookies -->
+  <div id="cookie-banner">
+    Usamos cookies para mejorar tu experiencia. 
+    Al continuar navegando aceptas nuestra <a href="#" style="color:#4caf50;">Política de Cookies</a>.
+    <button id="accept-cookies">Aceptar</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const banner = document.getElementById("cookie-banner");
+      const button = document.getElementById("accept-cookies");
+
+      // Mostrar banner si aún no se aceptaron cookies
+      if (!localStorage.getItem("cookiesAccepted")) {
+        banner.style.display = "block";
+      }
+
+      // Guardar preferencia y ocultar banner
+      button.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+      });
+    });
+  </script>
+
     <!-- Header -->
     <header class="header nav">
         <div class="container">
@@ -24,6 +80,7 @@
             <h3 class="section-title" data-translate="subtitle">Premios bianuales que dan visibilidad a las patologías reumáticas</h3>
             <nav class="nav">
                 <a href="index.html" class="nav-btn active" data-translate="nav_home">INICIO</a>
+                <a href="paginas/premio.html" class="nav-btn" data-translate="nav_premio">PREMIOS 2026</a>
                 <a href="paginas/programa.html" class="nav-btn" data-translate="nav_program">PROGRAMA DEL EVENTO</a>
                 <a href="paginas/contacto.html" class="nav-btn" data-translate="nav_contact">CONTACTO</a>
                 <a href="paginas/historico.html" class="nav-btn" data-translate="nav_history">HISTÓRICO PREMIOS</a>
@@ -35,7 +92,7 @@
     <section class="sponsors">
         <div class="container">
             <div class="sponsors-grid">
-                <img src="../final/imagenes/2logos.PNG" alt="Logos Concello da Coruña + Deputación da Coruña" class="sponsor-logo">
+                <img src="../imagenes/2logos.PNG" alt="Logos Concello da Coruña + Deputación da Coruña" class="sponsor-logo">
             </div>
         </div>
     </section>

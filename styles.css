@@ -530,7 +530,7 @@
   }
   
   .winner-description.active {
-    max-height: 1000px;
+    max-height: 3000px;
   }
   
   .winner-description p {
